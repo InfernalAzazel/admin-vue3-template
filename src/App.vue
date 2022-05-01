@@ -4,7 +4,6 @@
 </a-config-provider>
 </template>
 <script lang="ts" setup>
-import { ConfigProvider } from 'ant-design-vue';
 const getPopupContainer = (el: Element, dialogContext: any) => {
   if (dialogContext) {
     return dialogContext.getDialogWrap();

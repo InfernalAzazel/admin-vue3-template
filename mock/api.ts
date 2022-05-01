@@ -13,7 +13,8 @@ export default [
     {
         url: "/api/login",
         method: "post",
-        response: ({ body }) => {
+        // @ts-ignore
+        response: ({ body}) => {
             console.log(body);
             if (body.username === 'admin' && body.password === '123456'){
                 return {
@@ -27,7 +28,7 @@ export default [
             }else{
                 return{'msg': '请输入有效的账号或者密码'}
             }
-            
+
         },
     },
 ];
